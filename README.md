@@ -61,7 +61,8 @@ LLM stands for Large Language Model. It is a type of artificial intelligence (AI
 
 <!-- LLM_3.js -->
 6. To not enter history manually, and want to only ask question we use readline-sync
-  npm i readline-sync
+
+       npm i readline-sync
 
 <!-- LLM_4.js -->
 7. Want to not create history[] array manually, ai "ai.chats.create" maintain history automatically.
