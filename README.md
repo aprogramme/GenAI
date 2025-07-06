@@ -84,7 +84,7 @@ LLM stands for Large Language Model. It is a type of artificial intelligence (AI
            main();
         }
 
-### How to reduce token expense in LLM : 
+### How to reduce token expense in LLM 
 
           Token --> 500
           300 --> prev-chat
