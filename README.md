@@ -82,4 +82,27 @@ LLM stands for Large Language Model. It is a type of artificial intelligence (AI
   
            console.log(response.text);
            main();
-        } 
+        }
+
+### How to reduce token expense in LLM : 
+
+          Token --> 500
+          300 --> prev-chat
+
+     300 prev-chat     |----------------|
+        INPUT          |                |     OUTPUT
+    10---------------->|  Gemini(LLM)   |---------------->
+        curr-chat      |                |  20 token  
+                       |----------------| 
+
+          30 --> curr-chat
+          total expense --> 330
+          left --> 170
+
+  <!-- 3 strategy to save token  -->
+    1 approach :         2 approach :          3 approach :
+      last 50 msg          first 20 msg          (1-250)-make summary
+     + current msg         + last 30 msg         + 50 last msg full
+                          +  current msg        + current msg
+
+               ------ All 3 strategy fail------
